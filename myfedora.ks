@@ -27,6 +27,7 @@ lang en_IN.UTF-8
 -sssd*
 -abrt*
 -firewalld
+-cups*
 @base-x
 @core
 @standard
@@ -35,11 +36,13 @@ lang en_IN.UTF-8
 @multimedia                            # Common audio/video frameworks
 @networkmanager-submodules             # Common NetworkManager submodules
 @firefox
+bluez
 bash-color-prompt                      # Bash shell colors
 desktop-backgrounds-gnome              # Fedora desktop backgrounds
 evince
 fedora-workstation-repositories        # Default Fedora repositories
 gnome-backgrounds                      # GNOME desktop backgrounds
+gnome-bluetooth
 gnome-console
 gnome-disk-utility
 gnome-shell
