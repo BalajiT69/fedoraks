@@ -61,6 +61,7 @@ gvfs-mtp
 nautilus
 pinta
 plymouth-system-theme
+power-profiles-daemon
 transmission-gtk
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
