@@ -3,14 +3,14 @@
 #version=DEVEL
 
 # Configure installation method
-url --mirrorlist="https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-40&arch=x86_64"
-repo --name=fedora-updates --mirrorlist="https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f40&arch=x86_64" --cost=0
-repo --name=fedora-cisco-openh264 --mirrorlist="https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-cisco-openh264-40&arch=x86_64" --install
-repo --name=rpmfusion-free --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-40&arch=x86_64"
-repo --name=rpmfusion-free-updates --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-40&arch=x86_64" --cost=0
-repo --name=rpmfusion-nonfree --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-40&arch=x86_64"
-repo --name=rpmfusion-nonfree-updates --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-40&arch=x86_64" --cost=0
-repo --name=google-chrome --install --baseurl="https://dl.google.com/linux/chrome/rpm/stable/x86_64" --cost=0
+#url --mirrorlist="https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-40&arch=x86_64"
+#repo --name=fedora-updates --mirrorlist="https://mirrors.fedoraproject.org/mirrorlist?repo=updates-released-f40&arch=x86_64" --cost=0
+#repo --name=fedora-cisco-openh264 --mirrorlist="https://mirrors.fedoraproject.org/mirrorlist?repo=fedora-cisco-openh264-40&arch=x86_64" --install
+#repo --name=rpmfusion-free --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-40&arch=x86_64"
+#repo --name=rpmfusion-free-updates --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=free-fedora-updates-released-40&arch=x86_64" --cost=0
+#repo --name=rpmfusion-nonfree --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-40&arch=x86_64"
+#repo --name=rpmfusion-nonfree-updates --mirrorlist="https://mirrors.rpmfusion.org/mirrorlist?repo=nonfree-fedora-updates-released-40&arch=x86_64" --cost=0
+#repo --name=google-chrome --install --baseurl="https://dl.google.com/linux/chrome/rpm/stable/x86_64" --cost=0
 
 # Use graphical install
 graphical
@@ -36,6 +36,7 @@ lang en_IN.UTF-8
 @multimedia                            # Common audio/video frameworks
 @networkmanager-submodules             # Common NetworkManager submodules
 @firefox
+@vlc
 bluez
 bash-color-prompt                      # Bash shell colors
 desktop-backgrounds-gnome              # Fedora desktop backgrounds
@@ -60,12 +61,17 @@ gvfs-smb
 gvfs-mtp
 nautilus
 pinta
+pipewire
+pipewire-alsa
+pipewire-jack-audio-connection-kit
+pipewire-pulseaudio
+pipewire-utils
 plymouth-system-theme
 power-profiles-daemon
 transmission-gtk
+wireplumber
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
-@vlc
 
 %end
 
